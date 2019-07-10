@@ -5,6 +5,7 @@ using Wikitude;
 public class ExtendedObjectTrackingController : SampleController
 {
     public ObjectTracker Tracker;
+    public ObjectTracker Tracker2;
 
     public Text TrackingQualityText;
     public Image TrackingQualityBackground;
