@@ -8,14 +8,14 @@ public class SelectPointCloud : MonoBehaviour
     public List<int> pointClouds = new List<int>();
 
 
-    void Start()
+    private void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
         if (sceneName == "Game")
         {
-            pointClouds.Add(Random.Range(0, 4));
+            pointClouds.Add(Random.Range(0, 2));
             Debug.Log("Game Scene Active");
             if (pointClouds.Contains(0))
             {
