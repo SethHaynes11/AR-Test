@@ -2395,18 +2395,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 842201761}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &670619291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 670619289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be4189938837b2e458061ac59f4fe30e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &681603588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3108,6 +3096,14 @@ PrefabInstance:
       propertyPath: _targetCollectionResource._targetPath
       value: Wikitude/Harley.wto
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011553030912, guid: 78da3f0a9196f486f8452d72d45e3926, type: 3}
+      propertyPath: m_Name
+      value: Harley
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011553030912, guid: 78da3f0a9196f486f8452d72d45e3926, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114000011479129848, guid: 78da3f0a9196f486f8452d72d45e3926,
         type: 3}
       propertyPath: _targetsForExtendedTracking.Array.size
@@ -3448,7 +3444,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9be34c5bea8c9d34fbdfd3519d03ca66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointClouds: 
+  pointCloud:
+  - {fileID: 670619289}
+  - {fileID: 1314754278}
+  selected: {fileID: 0}
 --- !u!1 &981250823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,6 +7080,14 @@ PrefabInstance:
       propertyPath: _targetCollectionResource._targetPath
       value: Wikitude/Slimer2.wto
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011553030912, guid: 78da3f0a9196f486f8452d72d45e3926, type: 3}
+      propertyPath: m_Name
+      value: Slimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011553030912, guid: 78da3f0a9196f486f8452d72d45e3926, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114000011479129848, guid: 78da3f0a9196f486f8452d72d45e3926,
         type: 3}
       propertyPath: _targetsForExtendedTracking.Array.size
@@ -7197,14 +7204,6 @@ PrefabInstance:
     - target: {fileID: 4000013619951444, guid: 78da3f0a9196f486f8452d72d45e3926, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011553030912, guid: 78da3f0a9196f486f8452d72d45e3926, type: 3}
-      propertyPath: m_Name
-      value: ObjectTracker (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000011553030912, guid: 78da3f0a9196f486f8452d72d45e3926, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78da3f0a9196f486f8452d72d45e3926, type: 3}

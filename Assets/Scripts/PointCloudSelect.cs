@@ -5,36 +5,60 @@ using UnityEngine.SceneManagement;
 
 public class PointCloudSelect : MonoBehaviour
 {
-    public List<int> pointClouds = new List<int>();
-    
+    public List<GameObject> pointCloud = new List<GameObject>();
 
+    int randomInt;
+
+    public GameObject selected;
     void Start()
     {
+        
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
         if (sceneName == "Game")
         {
-            pointClouds.Add(Random.Range(0, 2));
             Debug.Log("Game Scene Active");
-            if (pointClouds.Contains(0))
-            {
-                Debug.Log("Harley has been chosen");
-            }
-            else
-            {
-                Debug.Log("Slimer has been chosen");
-            }
+            SelectRandom();
         }
         else
         {
             Debug.Log("Error");
         }
+        
     }
 
-    // Update is called once per frame
-    void Update()
+    void SelectRandom()
     {
+        
+        randomInt = Random.Range(0, pointCloud.Count);
+
+        selected = pointCloud[randomInt];
+
+        Debug.Log(selected);
+        selected.SetActive(true);
+
+
+        //Enable one of them, disable rest
+
+        /*if (randomInt.Equals(1))
+        {
+            Debug.Log("Remove Slimer");
+            //gameObject.Equals("Slimer");
+            //gameObject.SetActive(false);
+        }
+        else if (randomInt.Equals(2))
+        {
+            Debug.Log("Remove Harley");
+            //gameObject.Equals("Harley");
+            //gameObject.SetActive(false);
+            
+        }
+        else
+        {
+            Debug.Log("Error");
+            
+        }*/
         
     }
 }
