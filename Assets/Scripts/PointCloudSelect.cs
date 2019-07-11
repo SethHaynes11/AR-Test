@@ -37,28 +37,6 @@ public class PointCloudSelect : MonoBehaviour
 
         Debug.Log(selected);
         selected.SetActive(true);
-
-
-        //Enable one of them, disable rest
-
-        /*if (randomInt.Equals(1))
-        {
-            Debug.Log("Remove Slimer");
-            //gameObject.Equals("Slimer");
-            //gameObject.SetActive(false);
-        }
-        else if (randomInt.Equals(2))
-        {
-            Debug.Log("Remove Harley");
-            //gameObject.Equals("Harley");
-            //gameObject.SetActive(false);
-            
-        }
-        else
-        {
-            Debug.Log("Error");
-            
-        }*/
         
     }
 }
